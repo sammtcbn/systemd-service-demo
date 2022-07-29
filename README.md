@@ -4,12 +4,12 @@ Application written by shell script will always dump time stamp to file.
 
 Install on Linux
 ```sh
-$ sudo ./install.sh
+$ sudo ./install.bash
 ```
 
 Uninstall from Linux
 ```sh
-$ sudo ./uninstall.sh
+$ sudo ./uninstall.bash
 ```
 
 Service Control by systemctl
