@@ -9,7 +9,9 @@ fi
 
 mkdir -p ${INS_PATH} || exit 1
 cp -a -f mydemo.sh ${INS_PATH} || exit 1
+chmod +x ${INS_PATH}/mydemo.sh || exit 1
 cp -a -f uninstall.bash ${INS_PATH} || exit 1
+chmod +x ${INS_PATH}/uninstall.bash || exit 1
 cp -a -f ${SERVICE_NAME} /etc/systemd/system || exit 1
 
 systemctl daemon-reload || exit 1
