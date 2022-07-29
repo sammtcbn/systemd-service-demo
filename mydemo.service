@@ -1,0 +1,15 @@
+[Unit]
+Description=mydemo Service
+After=network.target systemd-sysctl.service systemd-modules-load.service
+
+[Service]
+User=root
+WorkingDirectory=/usr/local/sammtcbn/mydemo
+Restart=no
+Type=simple
+ExecStart=/usr/local/sammtcbn/mydemo/mydemo.sh
+RemainAfterExit=true
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
